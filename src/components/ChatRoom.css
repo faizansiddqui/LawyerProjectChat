@@ -1,0 +1,179 @@
+.chatRoom{
+    display: grid;
+    grid-template-columns: 23% 77%;
+    height: auto;
+    padding: 3px 0px 0px 3px;
+    justify-content: center;
+    height: 99vh;
+}
+.chatContainer{
+    background: rgb(255, 250, 241);  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+.chatClientShowProfile{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    color: #000;
+    padding: 5px;
+}
+.chatClinetProfileLeft{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+/* Right  */
+
+.chatClinetProfileLeft .textData{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 10px;
+}
+.textData :nth-child(1){
+    font-weight: 600;
+    font-size: 14px;
+}
+.textData :nth-child(2){
+    font-weight: 400;
+    font-size: 12px;
+}
+.chatClinetProfileLeft img{
+    width: 40px;
+    height: 40px;
+}
+.chatClinetProfileRight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-right: 10px;
+}
+.chatClinetProfileRight :nth-child(2){
+    font-size: 30px;
+    cursor: pointer;
+}
+.chatClinetProfileRight :nth-child(1){
+    width: 30px;
+    height: 30px;
+    background: green;
+    border: none;
+    border-radius: 50%;
+    padding: 4px;
+    cursor: pointer;
+}
+/* left side show all condidate chat  */
+.AllClientChatShow{
+    display: flex;
+    justify-content: center;
+    background: rgb(232, 232, 232);
+}
+.allClientChatShowTop{
+    width: 96%; 
+    background-color: rgb(213, 213, 213);
+    padding: 10px;
+    height: fit-content;
+}
+.chatup span{
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #424242;
+}
+.searchLawyer{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #000000;
+    color: #fff;
+    border-radius: 2px;
+    box-shadow: 0px 0px 2px 2px #c9c9c9;
+}
+.searchLawyer input{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    outline: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+}
+.chatup{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.chatup .darkmode{
+    color: #000;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.searchLawyer input::placeholder{
+    color: #fff;
+    font-size: 14px;
+}
+.searchLawyer .searchLawyerIcon{
+    margin-left: 10px;  
+    font-size: 24px;
+}
+.inputChat{
+    position: absolute;
+    bottom: 0;
+    left: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    height: 52px;
+    margin: 0 auto 10px auto;
+    /* margin: 0px auto 50px auto; */
+    background: #000000;
+    border-radius: 5px;  
+    padding: 0px 5px 0px 5px; 
+}
+.inputChat input{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    padding: 3px 12px;
+    outline: none;
+    background: none;
+    border: none;
+    font-size: 15px;
+}
+.attachFileIcon, .sendChatIcon{
+    font-size: 25px;
+    cursor: pointer;
+}
+.sendChatIcon{
+    margin-top: 8px;
+}
+@media(max-width: 950px){
+    .chatRoom{
+        grid-template-columns: 30% 70%;
+    }
+}
+@media(max-width: 670px){
+    .AllClientChatShow{
+        display: none;
+    }
+    .chatRoom{
+        grid-template-columns: 100%;
+        height: 92vh;
+    }
+    .inputChat{
+        padding: 0px 8px 0px 8px;
+    }
+}

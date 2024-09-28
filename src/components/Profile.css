@@ -1,0 +1,81 @@
+.profileLogo{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.showProfile{
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+}
+.showProfile img{
+    width: 100%;
+}
+.profileLogo img{
+    width: 100%;
+}
+.profileHoverShow{
+    position: absolute;
+    right: 30px;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: rgb(53, 35, 35);
+    min-width: 200px;
+    min-height: 250px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 10px;
+    transition: 0.2s top ease-out;
+    z-index: -1;
+}
+.hide{
+    top: 60px;
+    opacity: 0;
+}
+.show{
+    opacity: 100%;
+    top: 60px;
+}
+
+.profileLogoCustom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.profileLogoCustom .profileLogo{
+    margin-bottom: 3px;
+}
+.profileLogoCustom img{
+    width: 100%;
+}
+.profileLogoCustom .username{
+    font-size: 13px;
+}
+.profileLogoCustom a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #b9c7ff;
+}
+
+.UserDetailsCon{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7px;
+}
+.UserDetailsCon span{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.profileSetting{
+    color: #fff;
+    font-size: 22px;
+}

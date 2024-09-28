@@ -1,0 +1,21 @@
+.container{
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+}
+.navbarContainer{
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    place-items: center;
+    color: #000;
+}
+.navbarContainer .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
