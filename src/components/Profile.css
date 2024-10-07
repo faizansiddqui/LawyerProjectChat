@@ -30,7 +30,7 @@
     border-radius: 5px;
     padding: 10px 10px;
     transition: 0.2s top ease-out;
-    z-index: -1;
+    z-index: 1;
 }
 .hide{
     top: 60px;
