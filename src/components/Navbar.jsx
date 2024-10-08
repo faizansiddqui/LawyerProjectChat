@@ -3,7 +3,6 @@ import './Navbar.css'
 import { Link } from 'react-router-dom'
 import Profile from './Profile'
 
-
 const Navbar = () => {
   return (
     <div className="container">
@@ -25,5 +24,4 @@ const Navbar = () => {
 
   )
 }
-
 export default Navbar

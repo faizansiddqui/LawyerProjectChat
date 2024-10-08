@@ -1,7 +1,7 @@
 import React from 'react'
 import { LawyerFeeld } from '../../assets/lawyersFeeld'
 import './lawyerFeeldcon.css'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const LawyerFeelds = () => {
     const navigate = useNavigate();

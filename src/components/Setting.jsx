@@ -1,20 +1,22 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom';
+import React from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Setting = () => {
   const navigate = useNavigate();
-  const handleClick = ()=> {
+  const handleClick = () => {
     localStorage.removeItem('loggedInUserEmail');
-    alert("Logout SuccessFull")
+    alert("Logout Successful");
     navigate('/');
-  }
+  };
 
   return (
     <div>
-    <button onClick={handleClick}> Logout </button> 
-    <button> Admin Panel </button>
-      </div>
-  )
-}
+      <button onClick={handleClick}>Logout</button>
+      <Link to='/addData'>
+        <button>Admin Panel</button>
+      </Link>
+    </div>
+  );
+};
 
-export default Setting
+export default Setting;

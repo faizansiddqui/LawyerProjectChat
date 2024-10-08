@@ -208,6 +208,92 @@ body {
     margin-left: 10px;
 }
 
+/* For Chat New  */
+
+/* Container to hold all messages */
+.messageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y: auto;
+    padding: 10px;
+    max-height: 70vh; /* Adjust for message display area */
+}
+
+.message {
+    display: flex;
+    max-width: 60%;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    word-wrap: break-word;
+}
+
+.sent {
+    align-self: flex-end;
+    background-color: #e0f7fa;
+    color: #000;
+}
+
+.received {
+    align-self: flex-start;
+    background-color: #c8e6c9;
+    color: #000;
+}
+
+.message span {
+    max-width: 100%;
+}
+
+/* For input and chat controls */
+.inputChat {
+    position: sticky;
+    bottom: var(--spacing-desktop-bottom);
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--accent-bg);
+    padding: 10px;
+    width: 100%;
+}
+
+.inputChat input {
+    flex-grow: 1;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Scroll to latest message */
+.messageContainer::-webkit-scrollbar {
+    width: 10px;
+}
+
+.messageContainer::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .message {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .message {
+        max-width: 90%;
+    }
+}
 
 
 /* Responsive Design */
